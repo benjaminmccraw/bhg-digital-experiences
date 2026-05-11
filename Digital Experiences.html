@@ -4,6 +4,21 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Digital Experiences — BigHugeGiant</title>
+<meta name="description" content="BigHugeGiant designs and ships websites and digital products for growing businesses — one accountable team, ninety days, the number that actually matters." />
+<meta name="theme-color" content="#efeee4" />
+<link rel="canonical" href="https://bighugegiant.com/digital-experiences" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Digital Experiences — BigHugeGiant" />
+<meta property="og:description" content="Websites & digital products shipped in 90 days, not 9 quarters. One accountable team — design, engineering, program management — under one roof." />
+<meta property="og:url" content="https://bighugegiant.com/digital-experiences" />
+<meta property="og:image" content="assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Digital Experiences — BigHugeGiant" />
+<meta name="twitter:description" content="Websites & digital products shipped in 90 days, not 9 quarters." />
+<meta name="twitter:image" content="assets/og-image.png" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
@@ -44,32 +59,11 @@
   .yellow-hl{background:var(--bhg-yellow);padding:0 .12em;}
   em.editorial{font-family:'Playfair Display',Georgia,serif;font-style:italic;background:var(--bhg-yellow);padding:0 .15em;font-weight:500;}
 
-  /* ============ NAV ============ */
-  .nav{position:fixed;top:0;left:0;right:0;height:68px;z-index:50;background:var(--bhg-cream);transition:border-color .2s, box-shadow .2s;border-bottom:1px solid transparent;}
-  .nav.scrolled{border-bottom:1px solid var(--bhg-rule);box-shadow:0 2px 20px rgba(25,25,18,.08);}
-  .nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between;}
-  .logo{display:flex;align-items:center;gap:10px;font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.02em;}
-  .logo-mark{width:26px;height:26px;background:var(--bhg-ink);position:relative;}
-  .logo-mark::after{content:"";position:absolute;inset:5px;background:var(--bhg-yellow);}
-  .nav-links{display:flex;align-items:center;gap:34px;}
-  .nav-links a{font-size:13px;font-weight:500;color:var(--bhg-ink);}
-  .nav-links a:hover{color:#000;}
-  .nav-cta{display:flex;align-items:center;gap:10px;}
+  /* ============ BUTTON ============ */
   .btn{display:inline-flex;align-items:center;gap:10px;border-radius:0;cursor:pointer;font-family:inherit;border:0;transition:background-color .15s,border-color .15s,color .15s;}
   .btn-yellow{background:var(--bhg-yellow);color:var(--bhg-ink);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:12px 20px;}
   .btn-yellow:hover{background:var(--bhg-yellow-dk);}
   .btn-yellow.lg{padding:16px 26px;font-size:13px;}
-  .btn-outline{border:1px solid var(--bhg-rule);color:var(--bhg-ink);background:transparent;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:10px 16px;}
-  .btn-outline:hover{border-color:var(--bhg-ink);}
-  .nav-mobile-toggle{display:none;background:transparent;border:0;width:36px;height:36px;align-items:center;justify-content:center;cursor:pointer;}
-  .nav-mobile-toggle span{display:block;width:18px;height:2px;background:var(--bhg-ink);position:relative;}
-  .nav-mobile-toggle span::before,.nav-mobile-toggle span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--bhg-ink);}
-  .nav-mobile-toggle span::before{top:-6px;}
-  .nav-mobile-toggle span::after{top:6px;}
-  @media (max-width:1024px){
-    .nav-links,.nav-cta .btn-outline{display:none;}
-    .nav-mobile-toggle{display:flex;}
-  }
 
   /* ============ HERO ============ */
   .hero{padding:48px 0 60px;}
@@ -114,16 +108,7 @@
 
   .case-meta .index{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.3em;color:var(--bhg-soft);}
 
-  .case-logo-slot{margin-top:22px;width:100%;max-width:300px;height:120px;display:flex;align-items:center;justify-content:flex-start;background:transparent;position:relative;}
-  .case-logo-slot .lockup{font-family:'Bebas Neue',sans-serif;font-size:42px;line-height:1;letter-spacing:.04em;color:var(--bhg-ink);padding:0 18px;}
-  .case-logo-slot .ph-tag{position:absolute;left:8px;bottom:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;color:var(--bhg-mid);}
-  /* per-brand lockup flair (placeholder only) */
-  .lockup.uk{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;letter-spacing:0;font-size:30px;line-height:1;}
-  .lockup.ht{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:-.02em;font-size:34px;text-transform:none;}
-  .lockup.ifly{letter-spacing:.12em;}
-  .lockup.ido{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:-.02em;text-transform:lowercase;font-size:38px;}
-  .lockup.ido em{font-style:normal;color:var(--bhg-soft);}
-  .lockup.mw{letter-spacing:.18em;font-size:24px;line-height:1.05;}
+  .case-logo-slot{margin-top:22px;width:100%;max-width:300px;height:120px;display:flex;align-items:center;justify-content:flex-start;}
 
   .case-meta .client{font-family:'Bebas Neue',sans-serif;font-size:38px;line-height:.95;margin:22px 0 6px;}
   .case-meta .role{font-size:11px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bhg-soft);}
@@ -150,16 +135,6 @@
   .case-body{font-size:16px;line-height:1.7;max-width:600px;}
   .case-body + .case-body{margin-top:14px;}
 
-  .case-hero{margin-top:56px;width:100%;aspect-ratio:21/9;position:relative;overflow:hidden;background:var(--bhg-ink);}
-  @media (max-width:768px){.case-hero{aspect-ratio:4/3;}}
-  .case-hero .stripes{position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 26px, rgba(255,255,255,.04) 26px 27px);}
-  .case-hero .corner{position:absolute;left:28px;top:24px;color:var(--bhg-cream);font-size:10px;font-weight:700;letter-spacing:.38em;text-transform:uppercase;}
-  .case-hero .corner.r{left:auto;right:28px;}
-  .case-hero .center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:var(--bhg-mid);}
-  .case-hero .center .lbl{font-size:11px;font-weight:700;letter-spacing:.4em;text-transform:uppercase;}
-  .case-hero .center .big{font-family:'Bebas Neue',sans-serif;font-size:clamp(54px,7vw,120px);line-height:1;color:var(--bhg-yellow);margin-top:8px;}
-  .case-hero .placeholder{position:absolute;left:28px;bottom:22px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--bhg-mid);}
-
   /* Carousel (crossfade variant) */
   .case-video{margin-top:56px;width:100%;aspect-ratio:16/9;background:var(--bhg-ink);overflow:hidden;}
   .case-video video{width:100%;height:100%;object-fit:cover;display:block;}
@@ -185,23 +160,6 @@
   .cta-meta a{border-bottom:1px solid var(--bhg-yellow);padding-bottom:1px;}
   .cta .btn-yellow{margin-top:24px;}
 
-  /* ============ FOOTER ============ */
-  footer{background:var(--bhg-cream);border-top:1px solid var(--bhg-rule);padding:64px 0 36px;}
-  .foot-inner{max-width:1100px;margin:0 auto;padding:0 48px;}
-  @media (max-width:1024px){.foot-inner{padding:0 32px;}}
-  .foot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:44px;}
-  @media (max-width:1024px){.foot-grid{grid-template-columns:repeat(2,1fr);}}
-  @media (max-width:640px){.foot-grid{grid-template-columns:1fr;}}
-  .foot-grid h4{font-size:10px;font-weight:700;letter-spacing:.38em;text-transform:uppercase;color:var(--bhg-soft);margin:0 0 14px;}
-  .foot-grid ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;}
-  .foot-grid a{font-size:14px;color:var(--bhg-ink);}
-  .foot-grid a:hover{color:#000;border-bottom:1px solid var(--bhg-ink);}
-  .foot-bottom{margin-top:48px;padding-top:24px;border-top:1px solid var(--bhg-rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
-  .foot-bottom .copy{font-size:12px;color:var(--bhg-soft);}
-  .foot-bottom .socials{display:flex;gap:14px;}
-  .foot-bottom .socials a{font-size:11px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--bhg-soft);}
-  .foot-bottom .socials a:hover{color:var(--bhg-ink);}
-
   /* ============ REVEAL ============ */
   .reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease, transform .65s ease;}
   .reveal.visible{opacity:1;transform:translateY(0);}
@@ -210,7 +168,7 @@
 <body>
 
 <!-- ===================== HERO ===================== -->
-<header class="hero" data-screen-label="01 Hero">
+<header class="hero">
   <div class="container">
     <div class="reveal">
       <div class="eyebrow">Digital Experiences</div>
@@ -220,14 +178,14 @@
         <span class="stack">its keep.</span>
       </h1>
       <div class="hero-lede">
-        We design and ship websites and digital products that move the number you actually care about — inside ninety days, not nine quarters.
+        We design and ship websites and digital products for the kind of growing business that can't afford a nine-quarter rebuild — and we move the number that actually matters inside ninety days.
       </div>
     </div>
   </div>
 </header>
 
 <!-- ===================== POSITION ===================== -->
-<section class="position" data-screen-label="02 Position">
+<section class="position">
   <div class="container">
     <div class="reveal">
       <div class="eyebrow">The Promise</div>
@@ -235,13 +193,13 @@
     </div>
     <div class="reveal">
       <p>Every brand promise lives or dies in the moment a customer taps, scrolls, or signs in. That's where we work. Research informs design. Design informs engineering. Engineering ships the thing — and then keeps shipping.</p>
-      <p>One team owns the outcome from the first interview to the post-launch dashboard. No handoffs into a void. No "we'd need another phase for that." Just a working product, on the date we said, defending the budget you signed for.</p>
+      <p>One team owns the outcome from the first interview to the post-launch dashboard. That matters more, not less, when you're the owner-operator — without a fifty-person product org to chase handoffs through, the cost of a dropped baton lands on your calendar. No handoffs into a void. No "we'd need another phase for that." Just a working product, on the date we said, defending the budget you signed for.</p>
     </div>
   </div>
 </section>
 
 <!-- ===================== CAPABILITIES ===================== -->
-<section data-screen-label="03 Capabilities">
+<section>
   <div class="container">
     <div class="section-head">
       <div class="reveal">
@@ -249,7 +207,7 @@
         <h2>Four disciplines, <em class="editorial">one</em> team.</h2>
       </div>
       <div class="lede reveal">
-        Every engagement includes the four key disciplines required to deliver effective digital products — coordinated, co-located, and unified by a common goal.
+        Every engagement includes the four key disciplines required to deliver effective digital products — coordinated, co-located, and unified by a common goal. One accountable team instead of four separate vendors stitched together with status meetings.
       </div>
     </div>
 
@@ -286,7 +244,7 @@
 </section>
 
 <!-- ===================== CASES ===================== -->
-<section class="cases" data-screen-label="04 Cases">
+<section class="cases">
   <div class="container">
     <div class="section-head">
       <div class="reveal">
@@ -294,12 +252,12 @@
         <h2><em class="editorial">Real</em> outcomes across five industries.</h2>
       </div>
       <div class="lede reveal">
-        A short scroll through digital products we've shipped — the brief, the call we made, and what changed after launch.
+        A short scroll through digital products we've shipped — the brief, the call we made, and what changed after launch. Different industries, same method: one team owning the whole thing end-to-end.
       </div>
     </div>
 
     <!-- CASE 01 -->
-    <article class="case" data-screen-label="Case 01 University of Kentucky">
+    <article class="case">
       <div class="case-row">
         <div class="case-meta reveal">
           <div class="index">01 / 05</div>
@@ -313,7 +271,6 @@
           <p class="case-body">Higher-ed sites are usually structured for the registrar, not the seventeen-year-old deciding where to spend the next four years. We rebuilt UK's recruitment experience around the questions a prospect actually asks — programs, place, people, price — and gave the admissions team a CMS they could finally move at the speed of campus life.</p>
           <p class="case-body">A modular content system, accessibility baked in from day one, and a search experience that surfaces majors, faculty, and student stories in a single relevance graph.</p>
         </div>
-        <div class="case-tags reveal" hidden></div>
       </div>
       <div class="case-video reveal">
         <video src="assets/uk/UK_video.mp4" autoplay muted loop playsinline preload="metadata" aria-label="University of Kentucky — The Kentucky Road project film."></video>
@@ -345,18 +302,18 @@
           <div class="slide"><img src="assets/uk/UK_6.jpg" alt="University of Kentucky — All Our Athletes Go Pro desktop layout." /></div>
         </div>
         <div class="controls">
-          <div class="dots"></div>
+          <div class="dots" role="tablist" aria-label="University of Kentucky gallery"></div>
         </div>
       </div>
     </article>
 
     <!-- CASE 02 -->
-    <article class="case" data-screen-label="Case 02 HotelTonight">
+    <article class="case">
       <div class="case-row">
         <div class="case-meta reveal">
           <div class="index">02 / 05</div>
           <div class="case-logo-slot"><img src="assets/ht/ht_logo.png" alt="Hotel Tonight" style="width:220px;height:47px;object-fit:cover;display:block;" /></div>
-          <div class="client">HOTEL TONIGHT <span style="font-family:'Inter',sans-serif;font-size:14px;font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--bhg-ink);vertical-align:middle;margin-left:8px;">now part of Airbnb</span></div>
+          <div class="client">HOTEL TONIGHT <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--bhg-ink);vertical-align:middle;margin-left:8px;">now part of Airbnb</span></div>
           <div class="role">Mobile Booking &middot; iOS / Android</div>
           <div class="case-tags"><span>Mobile UX</span><span>iOS</span><span>Android</span><span>Maps</span><span>Payments</span></div>
         </div>
@@ -365,7 +322,6 @@
           <p class="case-body">HotelTonight had already redefined last-minute travel. The job was to keep that promise as the catalogue grew from a curated handful to thousands of properties — without trading the speed and clarity that earned the loyalty in the first place.</p>
           <p class="case-body">We rebuilt the booking flow around a single thumb-friendly path, replaced category sprawl with a smart map and live filters, and rewrote the post-book experience so support, receipts, and "extend my stay" all live one tap from the lock screen.</p>
         </div>
-        <div class="case-tags reveal" hidden></div>
       </div>
       <div class="case-carousel reveal" data-carousel data-interval="4500">
         <div class="stage">
@@ -377,13 +333,6 @@
           <div class="slide"><img src="assets/ht/HT_6.jpg" alt="Hotel Tonight — three mobile screens for city search, Los Angeles cover, and Why We're Different." /></div>
         </div>
         <div class="controls"><div class="dots" role="tablist" aria-label="Hotel Tonight gallery"></div></div>
-      </div>
-      <div class="case-hero reveal" aria-hidden="true" hidden>
-        <div class="stripes"></div>
-        <div class="corner">Hero Shot</div>
-        <div class="corner r">02</div>
-        <div class="center"><div class="lbl">App / Product Imagery</div><div class="big">HT</div></div>
-        <div class="placeholder">/* swap → ht-hero.jpg — 21:9 full-bleed */</div>
       </div>
       <div class="case-story reveal">
         <div class="col">
@@ -405,7 +354,7 @@
     </article>
 
     <!-- CASE 03 -->
-    <article class="case" data-screen-label="Case 03 iFLY">
+    <article class="case">
       <div class="case-row">
         <div class="case-meta reveal">
           <div class="index">03 / 05</div>
@@ -419,7 +368,6 @@
           <p class="case-body">iFLY has been turning skydiving into a Tuesday-after-work activity for a decade. The web didn't reflect it. We took the brand promise to new heights — informed by a tight loop between research, content, and design — and rebuilt the marketing site and booking engine as one seamless experience.</p>
           <p class="case-body">An immersive, video-forward home page, a regional location finder that reads like a travel guide, and a booking flow tuned for first-flyers, families, and competitive teams alike.</p>
         </div>
-        <div class="case-tags reveal" hidden></div>
       </div>
       <div class="case-carousel reveal" data-carousel data-interval="4500">
         <div class="stage">
@@ -431,13 +379,6 @@
           <div class="slide"><img src="assets/ifly/iFLY_6.jpg" alt="iFLY — Three mobile screens for Superhero Flight, Thrillseeker package, and past flights stats." /></div>
         </div>
         <div class="controls"><div class="dots" role="tablist" aria-label="iFLY gallery"></div></div>
-      </div>
-      <div class="case-hero reveal" aria-hidden="true" hidden>
-        <div class="stripes"></div>
-        <div class="corner">Hero Shot</div>
-        <div class="corner r">03</div>
-        <div class="center"><div class="lbl">Tunnel / Marketing Imagery</div><div class="big">iFLY</div></div>
-        <div class="placeholder">/* swap → ifly-hero.jpg — 21:9 full-bleed */</div>
       </div>
       <div class="case-story reveal">
         <div class="col">
@@ -459,7 +400,7 @@
     </article>
 
     <!-- CASE 04 -->
-    <article class="case" data-screen-label="Case 04 iDonate">
+    <article class="case">
       <div class="case-row">
         <div class="case-meta reveal">
           <div class="index">04 / 05</div>
@@ -473,7 +414,6 @@
           <p class="case-body">iDonate's mission is to put more money in the hands of nonprofits, not in the gap between intent and checkout. We rebuilt the giving experience from the donate button up — a configurable widget that meets supporters on any nonprofit's site, with a checkout designed for the smallest possible distance between "I want to help" and "thanks, here's your receipt."</p>
           <p class="case-body">A theming system any fundraiser can run, recurring giving as a first-class citizen, and a back-office dashboard that turns donor signal into the next email worth sending.</p>
         </div>
-        <div class="case-tags reveal" hidden></div>
       </div>
       <div class="case-carousel reveal" data-carousel data-interval="4500">
         <div class="stage">
@@ -485,7 +425,7 @@
           <div class="slide"><img src="assets/idonate/iD_6.jpg" alt="iDonate — Digital Giving Suite product page with concentric blue rings." /></div>
         </div>
         <div class="controls">
-          <div class="dots"></div>
+          <div class="dots" role="tablist" aria-label="iDonate gallery"></div>
         </div>
       </div>
       <div class="case-story reveal">
@@ -508,7 +448,7 @@
     </article>
 
     <!-- CASE 05 -->
-    <article class="case" data-screen-label="Case 05 Mission Workshop">
+    <article class="case">
       <div class="case-row">
         <div class="case-meta reveal">
           <div class="index">05 / 05</div>
@@ -522,7 +462,6 @@
           <p class="case-body">Mission Workshop builds bags engineered for a lifetime of use. Their old store didn't reflect the obsessiveness behind the product. We rebuilt the storefront on a headless stack — fast, image-forward, editorially driven — and gave the team a content surface they could ride alongside every product launch.</p>
           <p class="case-body">A modular product page that handles four-season modularity, an editorial system for ride reports and dispatches, and a checkout tuned for the customer who's been stalking the same Vandal for three weeks.</p>
         </div>
-        <div class="case-tags reveal" hidden></div>
       </div>
       <div class="case-video reveal">
         <video src="assets/mw/Mission_video.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Mission Workshop — product film."></video>
@@ -556,7 +495,7 @@
 </section>
 
 <!-- ===================== CTA ===================== -->
-<section class="cta" data-screen-label="06 CTA">
+<section class="cta">
   <div class="container">
     <div class="reveal">
       <div class="eyebrow">Start Here</div>
@@ -565,7 +504,7 @@
     <div class="reveal">
       <p class="cta-meta">Tell us where the product is stuck. We'll come back inside two business days with a one-page take on what we'd build first, who'd build it, and what good looks like ninety days from kickoff.</p>
       <p class="cta-meta" style="margin-top:14px;">Or skip the form. Email <a href="mailto:hello@bighugegiant.com">hello@bighugegiant.com</a>.</p>
-      <button class="btn btn-yellow lg">Book an Intro Call →</button>
+      <a class="btn btn-yellow lg" href="https://bighugegiant.com/website-intake" target="_blank" rel="noopener noreferrer">Book an Intro Call →</a>
     </div>
   </div>
 </section>
@@ -577,30 +516,50 @@
   },{threshold:.12, rootMargin:"0px 0px -8% 0px"});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  // Carousels (crossfade)
+  // Carousels (crossfade) — autoplay only while in view
+  const playObs = ('IntersectionObserver' in window) ? new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      const fn = e.target.__visChange;
+      if(typeof fn === 'function') fn(e.isIntersecting);
+    });
+  },{threshold:.15}) : null;
+
   document.querySelectorAll('[data-carousel]').forEach(car=>{
     const slides=[...car.querySelectorAll('.slide')];
     const dots=car.querySelector('.dots');
     const interval=parseInt(car.dataset.interval||'4500',10);
-    let i=0, timer=null;
+    let i=0, timer=null, hovered=false, visible=false;
     const go=(n)=>{
       i=(n+slides.length)%slides.length;
       slides.forEach((s,si)=>s.classList.toggle('active',si===i));
       [...dots.children].forEach((d,di)=>d.classList.toggle('active',di===i));
     };
-    const start=()=>{ stop(); timer=setInterval(()=>go(i+1),interval); };
+    const start=()=>{ if(timer||hovered||!visible) return; timer=setInterval(()=>go(i+1),interval); };
     const stop=()=>{ if(timer){clearInterval(timer);timer=null;} };
     slides.forEach((_,si)=>{
       const b=document.createElement('button');
       b.className='dot'+(si===0?' active':'');
       b.setAttribute('aria-label','Go to slide '+(si+1));
-      b.addEventListener('click',()=>{ go(si); start(); });
+      b.addEventListener('click',()=>{ go(si); stop(); start(); });
       dots.appendChild(b);
     });
-    car.addEventListener('mouseenter',stop);
-    car.addEventListener('mouseleave',start);
-    start();
+    car.addEventListener('mouseenter',()=>{ hovered=true; stop(); });
+    car.addEventListener('mouseleave',()=>{ hovered=false; start(); });
+    car.__visChange = (v)=>{ visible=v; v?start():stop(); };
+    if(playObs){ playObs.observe(car); } else { visible=true; start(); }
   });
+
+  // Pause case videos when offscreen
+  if('IntersectionObserver' in window){
+    const vidObs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        const v = e.target;
+        if(e.isIntersecting){ v.play && v.play().catch(()=>{}); }
+        else { v.pause && v.pause(); }
+      });
+    },{threshold:.15});
+    document.querySelectorAll('.case-video video').forEach(v=>vidObs.observe(v));
+  }
 </script>
 
 </body>
