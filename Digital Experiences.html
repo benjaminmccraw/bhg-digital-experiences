@@ -527,13 +527,13 @@
     const slides=[...car.querySelectorAll('.slide')];
     const dots=car.querySelector('.dots');
     const interval=parseInt(car.dataset.interval||'4500',10);
-    let i=0, timer=null, hovered=false, visible=false;
+    let i=0, timer=null, visible=false;
     const go=(n)=>{
       i=(n+slides.length)%slides.length;
       slides.forEach((s,si)=>s.classList.toggle('active',si===i));
       [...dots.children].forEach((d,di)=>d.classList.toggle('active',di===i));
     };
-    const start=()=>{ if(timer||hovered||!visible) return; timer=setInterval(()=>go(i+1),interval); };
+    const start=()=>{ if(timer||!visible) return; timer=setInterval(()=>go(i+1),interval); };
     const stop=()=>{ if(timer){clearInterval(timer);timer=null;} };
     slides.forEach((_,si)=>{
       const b=document.createElement('button');
@@ -542,8 +542,6 @@
       b.addEventListener('click',()=>{ go(si); stop(); start(); });
       dots.appendChild(b);
     });
-    car.addEventListener('mouseenter',()=>{ hovered=true; stop(); });
-    car.addEventListener('mouseleave',()=>{ hovered=false; start(); });
     car.__visChange = (v)=>{ visible=v; v?start():stop(); };
     if(playObs){ playObs.observe(car); } else { visible=true; start(); }
   });
